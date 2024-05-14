@@ -4,7 +4,7 @@ import os
 import json
 import time
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def show_json(obj):
     print(json.loads(obj.model_dump_json()))
