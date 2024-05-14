@@ -43,7 +43,7 @@ message = client.beta.threads.messages.create(
 run = client.beta.threads.runs.create(
     thread_id=thread.id,
     assistant_id=assistant.id,
-    instructions="Please provide the requested information"
+    instructions="Please provide the requested information only if present in the files provided."
 )
 
 # Waits for the run to be completed. 
